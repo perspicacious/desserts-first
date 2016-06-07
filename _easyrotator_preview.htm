@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>EasyRotator Preview</title>
+<script language="javascript" type="text/javascript">
+//alert(navigator.userAgent); // temp! e.g.:  Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.5
+var expDays = 400;
+var exp = new Date(); 
+exp.setTime(exp.getTime() + (expDays*24*60*60*1000));
+/*function getCookieVal (offset) {  
+	var endstr = document.cookie.indexOf (";", offset);  
+	if (endstr == -1) { endstr = document.cookie.length; }
+	return unescape(document.cookie.substring(offset, endstr));
+}
+function GetCookie (name) {  
+	var arg = name + "=";  
+	var alen = arg.length;  
+	var clen = document.cookie.length;  
+	var i = 0;  
+	while (i < clen) {    
+		var j = i + alen;    
+		if (document.cookie.substring(i, j) == arg) return getCookieVal (j);    
+		i = document.cookie.indexOf(" ", i) + 1;    
+		if (i == 0) break;   
+	}  
+	return null;
+}
+function SetCookie (name, value) {  
+	var argv = SetCookie.arguments;  
+	var argc = SetCookie.arguments.length;  
+	var expires = (argc > 2) ? argv[2] : null;  
+	var path = (argc > 3) ? argv[3] : null;  
+	var domain = (argc > 4) ? argv[4] : null;  
+	var secure = (argc > 5) ? argv[5] : false;  
+	document.cookie = name + "=" + escape (value) + 
+	((expires == null) ? "" : ("; expires=" + expires.toGMTString())) + 
+	((path == null) ? "" : ("; path=" + path)) +  
+	((domain == null) ? "" : ("; domain=" + domain)) +    
+	((secure == true) ? "; secure" : "");
+}*/
+/*function SetCookie(c_name,value,expiredays)
+{
+var exdate=new Date();
+exdate.setDate(exdate.getDate()+expiredays);
+document.cookie=c_name+ "=" +escape(value)+
+((expiredays==null) ? "" : ";expires="+exdate.toGMTString());
+}
+function GetCookie(c_name)
+{
+if (document.cookie.length>0)
+  {
+  c_start=document.cookie.indexOf(c_name + "=");
+  if (c_start!=-1)
+    { 
+    c_start=c_start + c_name.length+1; 
+    c_end=document.cookie.indexOf(";",c_start);
+    if (c_end==-1) c_end=document.cookie.length;
+    return unescape(document.cookie.substring(c_start,c_end));
+    } 
+  }
+return null; //"";
+}*/
+
+var savedValue = null;
+function restorePageBG()
+{
+	return; // ALL OF THIS IS HANDLED REMOTELY IN AS
+	/*
+	//var savedValue = readPref(); //GetCookie('xfs_preview_color');
+	alert('cookie value: ' + savedValue);
+	if (savedValue == null || savedValue == '')
+		savedValue = '#FFFFFF';
+	//document.bgColor = savedValue;
+	document.body.style.backgroundColor = savedValue;
+	document.getElementById('color_ti').value = savedValue;
+	*/
+}
+function savePageBG()
+{
+	var curValue = document.getElementById('color_ti').value;
+	//document.bgColor = curValue;
+	document.body.style.backgroundColor = curValue;
+	//writePref(curValue); //SetCookie('xfs_preview_color', curValue, 400);// exp);
+}
+//{error_alert_code}
+</script>
+<style type="text/css">
+/*body, html { height: 100%; }*/
+</style>
+</head>
+<body onload="restorePageBG();">
+<div align="center" style="position: absolute; left: 0; right: 0; top: 50px; bottom: 50px;">
+	<!-- Begin DWUser_EasyRotator -->
+<script type="text/javascript" src="http://c520866.r66.cf2.rackcdn.com/1/js/easy_rotator.min.js"></script>
+<div class="dwuserEasyRotator" style="width: 500px; height: 400px; position:relative; text-align: left; background-color: #333333;" data-erConfig="{autoplayEnabled:false, lpp:'102-105-108-101-58-47-47-47-67-58-47-85-115-101-114-115-47-75-97-114-105-115-104-109-97-47-68-111-99-117-109-101-110-116-115-47-69-97-115-121-82-111-116-97-116-111-114-80-114-101-118-105-101-119-47-112-114-101-118-105-101-119-95-115-119-102-115-47', wv:1}" data-erName="menu_Gallery" data-erTID="{qxs48md558113140349441}">
+	<div data-ertype="content" style="display: none;"><ul data-erlabel="Main Category">
+	<li>
+		<img class="main" src="assets/xfs_400x300_s80_tart.jpg" alt="Chocolate Coconut Tart" />
+		<img class="thumb" src="assets/xfs_400x300_s80_tart.jpg" />
+		<span class="title">Chocolate Coconut Tart</span>
+		<span class="desc">A rich single serving of warm chocolate ganache with coconut flakes inside a golden brown pastery crust. </span>
+	</li>
+	<li>
+		<img class="main" src="assets/xfs_400x300_s80_IMAG0096.jpg" alt="Blueberry and Lemon Tart" />
+		<img class="thumb" src="assets/xfs_400x300_s80_IMAG0096.jpg" />
+		<span class="title">Blueberry and Lemon Tart</span>
+		<span class="desc">A crushed walnut, almond, and graham cracker crust with fresh blueberries and mascarpone cheese and fresh lemon zest graded on top.</span>
+	</li>
+	<li>
+		<img class="main" src="assets/xfs_400x300_s80_IMAG0098.jpg" alt="Blueberry and Lemon Tart" />
+		<img class="thumb" src="assets/xfs_400x300_s80_IMAG0098.jpg" />
+		<span class="title">Blueberry and Lemon Tart</span>
+		<span class="desc">A crushed walnut, almond, and graham cracker crust with fresh blueberries and mascarpone cheese and fresh lemon zest graded on top.</span>
+	</li>
+	<li>
+		<img class="main" src="assets/xfs_400x300_s80_GosmsPhoto1363024708296_2.jpg" alt="Chocolate Raspberry Cake" />
+		<img class="thumb" src="assets/xfs_400x300_s80_GosmsPhoto1363024708296_2.jpg" />
+		<span class="title">Chocolate Raspberry Cake</span>
+		<span class="desc">A rich melt in your mouth chocolate cake with freshly whipped cream and raspberries on top.</span>
+	</li>
+	<li>
+		<img class="main" src="assets/xfs_400x300_s80_C360_2012-09-24-08-49-41.jpg" alt="Strawberry Short Cake" />
+		<img class="thumb" src="assets/xfs_400x300_s80_C360_2012-09-24-08-49-41.jpg" />
+		<span class="title">Strawberry Short Cake</span>
+		<span class="desc">English-style strawberry short cake.</span>
+	</li>
+	<li>
+		<img class="main" src="assets/xfs_400x300_s80_20150304_164448.jpg" alt="Raspberry Short Cake" />
+		<img class="thumb" src="assets/xfs_400x300_s80_20150304_164448.jpg" />
+		<span class="title">Raspberry Short Cake</span>
+		<span class="desc">A twist on the American strawberry short cake. This cake has fudge in the center.</span>
+	</li>
+	<li>
+		<img class="main" src="assets/xfs_400x300_s80_20141227_182346.jpg" alt="Fruit Cake" />
+		<img class="thumb" src="assets/xfs_400x300_s80_20141227_182346.jpg" />
+		<span class="title">Fruit Cake</span>
+		<span class="desc">This cake is not traditional fruit cake but it has strawberries, blueberries, and snozzleberries in its mix. Garnished with fresh raspberries.</span>
+	</li>
+	<li>
+		<img class="main" src="assets/xfs_400x300_s80_20140928_091104.jpg" alt="Chocolate Lava Cake" />
+		<img class="thumb" src="assets/xfs_400x300_s80_20140928_091104.jpg" />
+		<span class="title">Chocolate Lava Cake</span>
+		<span class="desc">The mount vesuvius of our menu, this cake is a classic favorite!!</span>
+	</li>
+</ul>
+</div>
+	<div data-ertype="layout" data-ertemplateName="NONE" style="">			<div class="erimgMain" style="position: absolute; left:0;right:0;top:0;bottom:0;" data-erConfig="{___numTiles:3, scaleMode:'fillArea', imgType:'main', __loopNextButton:false, __arrowButtonMode:'rollover'}">
+				<div class="erimgMain_slides erFixCSS3" style="position: absolute; left:50px; top:10px; bottom:10px; right:50px; background:#222222;" style_real="border-radius:15px;">
+					<div class="erimgMain_slide">
+						<div class="erimgMain_img" style="position: absolute; right: 20px; width: 200px; top: 60px; bottom: 60px;"></div>
+						<p class="erimgMain_title" style="position:absolute;left:20px;right:20px;top:18px; padding: 0; margin: 0 0 13px 0; font-weight: bold; font-size: 24px; color: #FFFFFF; font-family:Georgia,'Times New Roman',Times,_serif;"></p>
+						<p class="erimgMain_desc" style="position:absolute;left:20px;top:60px;right:240px; color:#FFFFFF; padding: 0; margin: 0; font: 14px/19px Georgia,'Times New Roman',Times,_serif;"></p>
+					</div>
+				</div>
+				<div class="erimgMain_arrowLeft" style="position:absolute; left: 10px; top: 50%; margin-top: -15px;" data-erConfig="{image:'circleSmall', image2:'circleSmall'}"></div>
+				<div class="erimgMain_arrowRight" style="position:absolute; right: 10px; top: 50%; margin-top: -15px;"></div>
+			</div><div class="erabout erFixCSS3" style="color: #FFF; text-align: left; background: #000; background:rgba(0,0,0,0.93); border: 2px solid #FFF; padding: 20px; font: normal 11px/14px Verdana,_sans; width: 300px; border-radius: 10px; display:none;">
+			This <a style="color:#FFF;" href="http://www.dwuser.com/easyrotator/" target="_blank">jQuery slider</a> was created with the free <a style="color:#FFF;" href="http://www.dwuser.com/easyrotator/" target="_blank">EasyRotator</a> software from DWUser.com.
+			<br /><br />
+            Use WordPress? The free <a style="color:#FFF;" href="http://www.dwuser.com/easyrotator/wordpress/" target="_blank">EasyRotator for WordPress</a> plugin lets you create beautiful <a style="color:#FFF;" href="http://www.dwuser.com/easyrotator/wordpress/" target="_blank">WordPress sliders</a> in seconds.
+			<br /><br />
+			<a style="color:#FFF;" href="#" class="erabout_ok">OK</a>   
+		</div>
+		<noscript>
+			Rotator powered by <a href="http://www.dwuser.com/easyrotator/">EasyRotator</a>, a free and easy jQuery slider builder from DWUser.com.  Please enable JavaScript to view.
+		</noscript>
+		<script type="text/javascript">/*Avoid IE gzip bug*/(function(b,c,d){try{if(!b[d]){b[d]="temp";var a=c.createElement("script");a.type="text/javascript";a.src="http://easyrotator.s3.amazonaws.com/1/js/nozip/easy_rotator.min.js";c.getElementsByTagName("head")[0].appendChild(a)}}catch(e){alert("EasyRotator fail; contact support.")}})(window,document,"er_$144");</script>
+	
+	</div>
+</div>
+<!-- End DWUser_EasyRotator -->
+</div>
+<div style="position: absolute; bottom: 0; left:50%; margin-left: -160px; width: 320px; background-color: 
+#FFFFFF; border: 1px solid #666666; text-align: center; font-size:12px;" align="center">
+	Hex BG Color: <input type="text" style="width: 100px;" id="color_ti"/><input name="Button" type="button" onclick="savePageBG()" value="Apply" />
+</div>
+</body>
+</html>
