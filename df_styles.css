@@ -1,0 +1,222 @@
+/* CSS Document */
+.page_bg {
+	-webkit-box-shadow: 0px 0px;
+	box-shadow: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.title {
+	font-family: lancelot;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 8em;
+	
+}
+
+p {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	
+}
+.intro {
+	font-size: large;
+}
+
+.home  {
+	background-image: url(../assets/Wedding5221.jpg);
+	background-size: cover;
+	background-position: 0% 14%;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+}
+
+
+
+.sweet {
+	background-image: url(../assets/molten%20cake.jpg);
+	background-size: cover;
+	background-position: 0% 56%;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+}
+
+.savoury {
+	background-size: cover;
+	background-image: url(../assets/savoury.jpg);
+	background-position: 0% 50%;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+}
+.diabetic {
+	background-size: cover;
+	background-image: url(../assets/diabetic.jpg);
+	background-position: 0% 37%;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+}
+.about {
+	background-size: cover;
+	background-image: url(../assets/rapsberry%20dessert.jpg);
+	background-position: 0% 27%;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+}
+.recipe {
+	background-size: cover;
+	background-image: url(../assets/chest.jpg);
+	background-position: 0% 62%;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+}
+.favourite {
+	background-size: cover;
+	background-image: url(../assets/parfait.jpg);
+	background-position: 0% 19%;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+}
+.sbcake {
+	background-image: url(../assets/strawberryshortcake.png);
+	background-size: cover;
+	background-origin: content-box;
+	height: 36em;
+	background-repeat: no-repeat;
+
+}
+.bbslice {
+	background-image: url(../assets/blueberryslice.png);
+	height: 36em;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+
+}
+#footer-link-home {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.navbar.navbar-default {
+	border-width: thick;
+	border-color: hsla(0,0%,83%,1.00);
+}
+.container-fluid .navbar-header .navbar-brand {
+}
+.nav.navbar-nav .dropdown .dropdown-toggle {
+}
+.nav.navbar-nav .dropdown .dropdown-menu {
+
+}
+a.dl {
+	color: hsla(0,0%,100%,1.00);
+}
+.form-control {
+
+
+
+
+}
+.table-responsive {
+	background-color: hsla(0,0%,100%,1.00);
+	-webkit-box-shadow: 0px 0px 0px 0px;
+	box-shadow: 0px 0px 0px 0px;
+	border-radius: 5px;
+	border-style: inset;
+}
+tbody tr td {
+	color: hsla(0,0%,38%,1.00);
+}
+.middle {
+	background-color: hsla(0,0%,0%,0.30);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px){
+	.sitemap {
+	margin-left: 1em;
+	margin-right: 1em;
+
+	}
+.intro {
+	padding-top: 0em;
+}
+.title {
+	font-size: 4em;
+}
+h3 {
+}
+.dwuserEasyRotator {
+}
+
+
+
+
+
+}
+
+@media (min-width:768px) AND (max-width:991px){
+.intro {
+	font-size: 1em;
+}
+
+}
+
+@media (min-width:992px) AND (max-width:1199px){
+.indexpage {
+	padding-top: 1.5em;
+
+
+}
+
+}
+
+@media (min-width:768px){
+.intro {
+}
+
+
+
+}
+
+@media (min-width:992px){
+}
+
+@media (min-width:1200px){
+.indexpage {
+	padding-top: 4.5em;
+}
+
+}
